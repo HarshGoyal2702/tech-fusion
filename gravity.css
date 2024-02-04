@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    scroll-behavior: smooth;
+
+}
+
+.container{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow-x: hidden;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(167, 41, 167, 0.133); */
+    background: url("./karl-magnuson-LaHgrqo1ZRk-unsplash.jpg");
+    background-size: contain;
+    background-position:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.navbar{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    font-size: 4vh;
+    padding: 20px;
+    color: black;
+    z-index: -1;
+    filter: blur(3px);
+    border-bottom: 3px dotted white;
+    transition: all 2s ease-out;
+    padding-bottom: 30px;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    transform: translateX(40px);
+    z-index: 100;
+}
+.navbar img{
+    width: 50px;
+    background: white;
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 100;
+}
+.navbar div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 1;
+}
+
+.main h1{
+   
+}
+.main2{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: black;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.top{
+    position: absolute;
+    height: 50%;
+    width: 100vw;
+    top: 0;
+    /* background: #dd9393; */
+    overflow: hidden;
+    background: #fff;
+}
+.bottom{
+    position: absolute;
+    height: 50%;
+    width: 100vw;
+    bottom: 0;
+    overflow: hidden;
+    /* background: #b61c1c; */
+    background: #fff;
+
+}
+#waise{
+    text-transform: capitalize;
+}
+#waise:hover{
+   text-shadow: 1px 1px 2px pink;
+}
+.center{
+    left: 35%;
+    top: 50%;
+    background: #000000;
+    color: #fff;
+    position: relative;
+}
+.main2 h1{
+    position: absolute;
+    font-size: 25vh;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: black;
+}
+#top-h{
+    top: 70%;
+}
+#bottom-h{
+    top : -30%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    overflow: hidden;
+}
+.circle{
+    width: 100vh;
+    height: 100vh;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: -35vh;
+}
+.strip{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0,-50%);
+    /* background: yellow; */
+    width: 100%;
+    height: 10%;
+    transform-origin:left;
+    border: 1px solid black;
+}
+.str1{
+    transform:  rotate(-15deg);
+}
+.str2{
+    transform:  rotate(-25deg);
+}
+.str3{
+    transform:  rotate(0deg);
+}
+.str4{
+    transform:  rotate(15deg);
+}
+.str5{
+    transform:  rotate(25deg);
+} 
+
+.first{
+    height: 50%;
+    background: #fff;
+}
+.sec{
+    height: 50%;
+    background: #ddd;
+    transition: all 0s ease-in;
+}
+
+.text{
+    width: 60vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    position: absolute;
+    right: 20px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text span{
+    color: red;
+}
+.text span:hover{
+    font-size: 19px;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
+}
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 60%;
+    background: #000;
+   border-radius: 50%;
+   border: 5px solid #918c8c;
+   font-size: 19px;
+
+}
+#as{
+    color: #fff;
+}
+.loader p{
+    position: absolute;
+    color: #000;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+}
+.hello{
+    background: linear-gradient(white,white,yellow);
+    border: 5px solid #d4c419;
+    border-top: #000000; 
+}
+.hello2{
+    border: 5px solid #918c8c;
+    border-top: 5px solid black; 
+    background: none;
+    animation : animate 1s infinite forwards;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+
+}
+.congratulation{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #000;
+    justify-content: center;
+}
+button{
+    background: coral;
+    color: #fff;
+    padding: 12px 19px;
+    font-size: 2em;
+    position: absolute;
+    margin-top: 6em;
+    border-radius: 20px;
+    border: 1px solid white;
+    box-shadow: 1px 3px 2px rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+footer{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #ddd;
+    padding: 2em;
+    text-indent: 100px;
+    line-height: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    font-size: 20px;
+    line-height: 25px;
+}
+footer p{
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.details h3{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    left: 15%;
+    color: rgb(55, 49, 49);
+}
